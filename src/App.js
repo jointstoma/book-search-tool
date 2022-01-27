@@ -10,7 +10,7 @@ function App() {
     const loading = useSelector(state => state?.loadingReduce?.loading)
     return (
         <article className="App">
-            <header tabindex="0">
+            <header tabIndex="0">
                 <h1>
                     My Library
                 </h1>
