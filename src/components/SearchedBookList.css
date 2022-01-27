@@ -1,0 +1,9 @@
+.bookList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 80%;
+}
+
+/*# sourceMappingURL=SearchedBookList.css.map */
