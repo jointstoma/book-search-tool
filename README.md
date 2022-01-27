@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Book Search Tool App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created by Tao @2022-01-27
+(https://github.com/jointstoma/book-search-tool).
 
-## Available Scripts
+Published here: http://tao.gforms.org/
 
-In the project directory, you can run:
+## Instruction
 
-### `npm start`
+This app accepts a title as a parameter from user. The app will return book results with the following information:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Title
+* Book Cover
+* Author
+* Published Date
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The application can also sort results according to the selected options:
 
-### `npm test`
+* Sort results alphabetically by title
+* Sort results by more recently published
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technical questions
 
-### `npm run build`
+1. How long did you spend on the coding assignment?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+     2-3 evenings. Roughly 6hrs in total.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+2. What was the most useful feature that was added to the latest version of your chosen language? Please include a
+   snippet of code that shows how you've used it.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+     Array methods such as map, filter, sort implemented in ES2015.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+     eg:searchedBooks = searchedBooks.filter(book => !!book.isbn && !!book.published_date)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. How would you track down a performance issue in production? Have you ever had to do this?
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+      Run app and use tools (lighthouse) implemeted in the brower. where you get info on the performance/potential issues.
+      Meanwhile, once you nail down to specific codes (function), print the timestamp also helps to test the performance.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+      Yes, when the performance is really bad, you have to solve such issue to make your app run smoothly. Somethimes, you
+      have to sacrifice the cool effects for a better performance.
 
-### Code Splitting
+4. How would you improve the API that you just used?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+      The API allows user to query books on inputing a name. However, I found the data structure returned is quite
+      disorganized, eg: results are often redundant and sometimes missing. I would rebuild/reorganize the data structure.
+      Meanwhile, documentation needs to be maintained and updated.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. Please describe yourself using correctly formatted JSON.
 
-### Making a Progressive Web App
+```json
+{
+  "name": "Tao Jiang",
+  "name-for-short": "JT",
+  "open-to-work": true,
+  "key-skills": [
+    "HTML3",
+    "CSS3",
+    "Javascript",
+    "Reactjs/Redux/Hook",
+    "Nodejs"
+  ],
+  "contacts": {
+    "email": "taoj2021@gmail.com",
+    "mobile": "6472835687",
+    "address": "Toronto, Ontario, Canada"
+  }
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
