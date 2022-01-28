@@ -24,7 +24,7 @@ The application can also sort results according to the selected options:
 1. How long did you spend on the coding assignment?
 
 
-     2-3 evenings. Roughly 6hrs in total.
+     2-3 evenings. Roughly 6hrs in total(no time to test).
 
 
 2. What was the most useful feature that was added to the latest version of your chosen language? Please include a
@@ -38,7 +38,7 @@ The application can also sort results according to the selected options:
 3. How would you track down a performance issue in production? Have you ever had to do this?
 
 
-      Run app and use tools (lighthouse) implemeted in the brower. where you get info on the performance/potential issues.
+      Run app and use tools (lighthouse) implemeted in the brower where you can get info on the performance/potential issues.
       Meanwhile, once you nail down to specific codes (function), print the timestamp also helps to test the performance.
 
       Yes, when the performance is really bad, you have to solve such issue to make your app run smoothly. Somethimes, you

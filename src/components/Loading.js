@@ -13,8 +13,8 @@ const Loading = () => {
                 loading ?
                     <article className='loadingContainer'>
                         <section className='loader'>
-                            {new Array(5).fill('dot').map(() =>
-                            <p className='loaderDot'/>
+                            {new Array(5).fill('dot').map((item, index) =>
+                            <p key={index} className='loaderDot'/>
                             )}
                         </section>
                         <h3 className='loaderText'/>

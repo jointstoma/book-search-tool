@@ -9,7 +9,7 @@ const SearchForm = () => {
     const onSubmit = data => {
         fetchAllBooks(data?.bookName, sortOption)(dispatch)
     }
-    const {register, handleSubmit, formState: {}} = useForm()
+    const {register, handleSubmit} = useForm()
     return (
         <form className='formContainer' aria-label="search a book" onSubmit={handleSubmit(onSubmit)}>
             <label htmlFor='searchBook'>Search Book:</label>

@@ -13,9 +13,9 @@ const SearchedBookItem = ({book}) => {
                  }}
             />
             <section className= 'des'>
-                <p tabIndex="0" className='title'>{book.title.slice(0, 50)}</p>
-                <p tabIndex="0" className='author'>{book.author}</p>
-                <p tabIndex="0" className='publishedDate'>{book.published_date[0]}</p>
+                <p className='title'>{book.title.slice(0, 50)}</p>
+                <p className='author'>{book.author}</p>
+                <p className='publishedDate'>{book.published_date[0]}</p>
             </section>
         </section>
     )
